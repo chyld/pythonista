@@ -1,0 +1,10 @@
+input()
+m = set([int(x) for x in input().split()])
+input()
+n = set([int(x) for x in input().split()])
+union = m.union(n)
+intersection = m.intersection(n)
+l = list(union - intersection)
+l.sort()
+for x in l:
+    print(x)
